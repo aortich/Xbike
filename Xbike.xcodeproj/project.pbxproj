@@ -1,0 +1,777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7C248A0B2843E01300B46B7D /* GoogleMapsBase.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C248A092843E01300B46B7D /* GoogleMapsBase.xcframework */; };
+		7C248A0C2843E01300B46B7D /* GoogleMapsBase.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C248A092843E01300B46B7D /* GoogleMapsBase.xcframework */; };
+		7C248A0F2843E01E00B46B7D /* GoogleMapsCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C248A0D2843E01E00B46B7D /* GoogleMapsCore.xcframework */; };
+		7C248A102843E01E00B46B7D /* GoogleMapsCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C248A0D2843E01E00B46B7D /* GoogleMapsCore.xcframework */; };
+		7C248A172843E0A800B46B7D /* GoogleMaps.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C248A152843E0A800B46B7D /* GoogleMaps.xcframework */; };
+		7C248A182843E0A800B46B7D /* GoogleMaps.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C248A152843E0A800B46B7D /* GoogleMaps.xcframework */; };
+		7C248A1B2843E0CB00B46B7D /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7C248A192843E0CB00B46B7D /* GoogleMaps.bundle */; };
+		7C248A1C2843E0CB00B46B7D /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7C248A192843E0CB00B46B7D /* GoogleMaps.bundle */; };
+		7C248A212843E14900B46B7D /* GoogleMaps.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C248A152843E0A800B46B7D /* GoogleMaps.xcframework */; };
+		7C248A222843E14B00B46B7D /* GoogleMapsBase.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C248A092843E01300B46B7D /* GoogleMapsBase.xcframework */; };
+		7C248A232843E14D00B46B7D /* GoogleMapsCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C248A0D2843E01E00B46B7D /* GoogleMapsCore.xcframework */; };
+		7C248A242843E15500B46B7D /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7C248A192843E0CB00B46B7D /* GoogleMaps.bundle */; };
+		7C248A262843E19100B46B7D /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C248A252843E19100B46B7D /* Accelerate.framework */; };
+		7C248A282843E19600B46B7D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C248A272843E19600B46B7D /* CoreData.framework */; };
+		7C248A2A2843E19C00B46B7D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C248A292843E19C00B46B7D /* CoreGraphics.framework */; };
+		7C248A2C2843E1A300B46B7D /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C248A2B2843E1A300B46B7D /* CoreImage.framework */; };
+		7C248A2E2843E1AB00B46B7D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C248A2D2843E1AB00B46B7D /* CoreLocation.framework */; };
+		7C248A302843E1B000B46B7D /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C248A2F2843E1B000B46B7D /* CoreTelephony.framework */; };
+		7C248A322843E1B700B46B7D /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C248A312843E1B700B46B7D /* CoreText.framework */; };
+		7C248A342843E1BC00B46B7D /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C248A332843E1BC00B46B7D /* GLKit.framework */; };
+		7C248A362843E1C100B46B7D /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C248A352843E1C100B46B7D /* ImageIO.framework */; };
+		7C248A382843E1C800B46B7D /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C248A372843E1C800B46B7D /* libc++.tbd */; };
+		7C248A3A2843E1CF00B46B7D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C248A392843E1CF00B46B7D /* libz.tbd */; };
+		7C248A3C2843E1D400B46B7D /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C248A3B2843E1D400B46B7D /* Metal.framework */; };
+		7C248A3E2843E1DD00B46B7D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C248A3D2843E1DD00B46B7D /* OpenGLES.framework */; };
+		7C248A402843E1E500B46B7D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C248A3F2843E1E500B46B7D /* QuartzCore.framework */; };
+		7C248A422843E1EE00B46B7D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C248A412843E1EE00B46B7D /* SystemConfiguration.framework */; };
+		7C248A442843E1F600B46B7D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C248A432843E1F600B46B7D /* UIKit.framework */; };
+		7C9144222843D11700EB913C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9144212843D11700EB913C /* MapViewController.swift */; };
+		7CF232A22842B33D007D25C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF232A12842B33D007D25C6 /* AppDelegate.swift */; };
+		7CF232A62842B33D007D25C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF232A52842B33D007D25C6 /* ViewController.swift */; };
+		7CF232AB2842B33E007D25C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CF232AA2842B33E007D25C6 /* Assets.xcassets */; };
+		7CF232AE2842B33E007D25C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CF232AC2842B33E007D25C6 /* LaunchScreen.storyboard */; };
+		7CF232B92842B33E007D25C6 /* XbikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF232B82842B33E007D25C6 /* XbikeTests.swift */; };
+		7CF232C32842B33E007D25C6 /* XbikeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF232C22842B33E007D25C6 /* XbikeUITests.swift */; };
+		7CF232C52842B33E007D25C6 /* XbikeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF232C42842B33E007D25C6 /* XbikeUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7CF232B52842B33E007D25C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CF232962842B33D007D25C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CF2329D2842B33D007D25C6;
+			remoteInfo = Xbike;
+		};
+		7CF232BF2842B33E007D25C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CF232962842B33D007D25C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CF2329D2842B33D007D25C6;
+			remoteInfo = Xbike;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7C248A092843E01300B46B7D /* GoogleMapsBase.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GoogleMapsBase.xcframework; sourceTree = "<group>"; };
+		7C248A0D2843E01E00B46B7D /* GoogleMapsCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GoogleMapsCore.xcframework; sourceTree = "<group>"; };
+		7C248A152843E0A800B46B7D /* GoogleMaps.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GoogleMaps.xcframework; sourceTree = "<group>"; };
+		7C248A192843E0CB00B46B7D /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = "GoogleMaps.xcframework/ios-arm64_x86_64-simulator/GoogleMaps.framework/Resources/GoogleMaps.bundle"; sourceTree = "<group>"; };
+		7C248A252843E19100B46B7D /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		7C248A272843E19600B46B7D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7C248A292843E19C00B46B7D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7C248A2B2843E1A300B46B7D /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		7C248A2D2843E1AB00B46B7D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7C248A2F2843E1B000B46B7D /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		7C248A312843E1B700B46B7D /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		7C248A332843E1BC00B46B7D /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		7C248A352843E1C100B46B7D /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		7C248A372843E1C800B46B7D /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		7C248A392843E1CF00B46B7D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		7C248A3B2843E1D400B46B7D /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		7C248A3D2843E1DD00B46B7D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		7C248A3F2843E1E500B46B7D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7C248A412843E1EE00B46B7D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7C248A432843E1F600B46B7D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7C9144212843D11700EB913C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		7CF2329E2842B33D007D25C6 /* Xbike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xbike.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CF232A12842B33D007D25C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7CF232A52842B33D007D25C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7CF232AA2842B33E007D25C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7CF232AD2842B33E007D25C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7CF232AF2842B33E007D25C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CF232B42842B33E007D25C6 /* XbikeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XbikeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CF232B82842B33E007D25C6 /* XbikeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XbikeTests.swift; sourceTree = "<group>"; };
+		7CF232BE2842B33E007D25C6 /* XbikeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XbikeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CF232C22842B33E007D25C6 /* XbikeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XbikeUITests.swift; sourceTree = "<group>"; };
+		7CF232C42842B33E007D25C6 /* XbikeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XbikeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7CF2329B2842B33D007D25C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C248A442843E1F600B46B7D /* UIKit.framework in Frameworks */,
+				7C248A422843E1EE00B46B7D /* SystemConfiguration.framework in Frameworks */,
+				7C248A402843E1E500B46B7D /* QuartzCore.framework in Frameworks */,
+				7C248A3E2843E1DD00B46B7D /* OpenGLES.framework in Frameworks */,
+				7C248A3C2843E1D400B46B7D /* Metal.framework in Frameworks */,
+				7C248A3A2843E1CF00B46B7D /* libz.tbd in Frameworks */,
+				7C248A382843E1C800B46B7D /* libc++.tbd in Frameworks */,
+				7C248A362843E1C100B46B7D /* ImageIO.framework in Frameworks */,
+				7C248A342843E1BC00B46B7D /* GLKit.framework in Frameworks */,
+				7C248A322843E1B700B46B7D /* CoreText.framework in Frameworks */,
+				7C248A302843E1B000B46B7D /* CoreTelephony.framework in Frameworks */,
+				7C248A2E2843E1AB00B46B7D /* CoreLocation.framework in Frameworks */,
+				7C248A2C2843E1A300B46B7D /* CoreImage.framework in Frameworks */,
+				7C248A2A2843E19C00B46B7D /* CoreGraphics.framework in Frameworks */,
+				7C248A282843E19600B46B7D /* CoreData.framework in Frameworks */,
+				7C248A262843E19100B46B7D /* Accelerate.framework in Frameworks */,
+				7C248A212843E14900B46B7D /* GoogleMaps.xcframework in Frameworks */,
+				7C248A222843E14B00B46B7D /* GoogleMapsBase.xcframework in Frameworks */,
+				7C248A232843E14D00B46B7D /* GoogleMapsCore.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CF232B12842B33E007D25C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C248A0F2843E01E00B46B7D /* GoogleMapsCore.xcframework in Frameworks */,
+				7C248A0B2843E01300B46B7D /* GoogleMapsBase.xcframework in Frameworks */,
+				7C248A172843E0A800B46B7D /* GoogleMaps.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CF232BB2842B33E007D25C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C248A102843E01E00B46B7D /* GoogleMapsCore.xcframework in Frameworks */,
+				7C248A0C2843E01300B46B7D /* GoogleMapsBase.xcframework in Frameworks */,
+				7C248A182843E0A800B46B7D /* GoogleMaps.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		658CA60E7972A427EFA3BDE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C248A432843E1F600B46B7D /* UIKit.framework */,
+				7C248A412843E1EE00B46B7D /* SystemConfiguration.framework */,
+				7C248A3F2843E1E500B46B7D /* QuartzCore.framework */,
+				7C248A3D2843E1DD00B46B7D /* OpenGLES.framework */,
+				7C248A3B2843E1D400B46B7D /* Metal.framework */,
+				7C248A392843E1CF00B46B7D /* libz.tbd */,
+				7C248A372843E1C800B46B7D /* libc++.tbd */,
+				7C248A352843E1C100B46B7D /* ImageIO.framework */,
+				7C248A332843E1BC00B46B7D /* GLKit.framework */,
+				7C248A312843E1B700B46B7D /* CoreText.framework */,
+				7C248A2F2843E1B000B46B7D /* CoreTelephony.framework */,
+				7C248A2D2843E1AB00B46B7D /* CoreLocation.framework */,
+				7C248A2B2843E1A300B46B7D /* CoreImage.framework */,
+				7C248A292843E19C00B46B7D /* CoreGraphics.framework */,
+				7C248A272843E19600B46B7D /* CoreData.framework */,
+				7C248A252843E19100B46B7D /* Accelerate.framework */,
+				7C248A152843E0A800B46B7D /* GoogleMaps.xcframework */,
+				7C248A092843E01300B46B7D /* GoogleMapsBase.xcframework */,
+				7C248A0D2843E01E00B46B7D /* GoogleMapsCore.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C9144202843D0FB00EB913C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				7C9144232843D12C00EB913C /* Presenting */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		7C9144232843D12C00EB913C /* Presenting */ = {
+			isa = PBXGroup;
+			children = (
+				7C9144212843D11700EB913C /* MapViewController.swift */,
+			);
+			path = Presenting;
+			sourceTree = "<group>";
+		};
+		7CF232952842B33D007D25C6 = {
+			isa = PBXGroup;
+			children = (
+				7C248A192843E0CB00B46B7D /* GoogleMaps.bundle */,
+				7CF232A02842B33D007D25C6 /* Xbike */,
+				7CF232B72842B33E007D25C6 /* XbikeTests */,
+				7CF232C12842B33E007D25C6 /* XbikeUITests */,
+				7CF2329F2842B33D007D25C6 /* Products */,
+				658CA60E7972A427EFA3BDE3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7CF2329F2842B33D007D25C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CF2329E2842B33D007D25C6 /* Xbike.app */,
+				7CF232B42842B33E007D25C6 /* XbikeTests.xctest */,
+				7CF232BE2842B33E007D25C6 /* XbikeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CF232A02842B33D007D25C6 /* Xbike */ = {
+			isa = PBXGroup;
+			children = (
+				7C9144202843D0FB00EB913C /* Modules */,
+				7CF232A12842B33D007D25C6 /* AppDelegate.swift */,
+				7CF232A52842B33D007D25C6 /* ViewController.swift */,
+				7CF232AA2842B33E007D25C6 /* Assets.xcassets */,
+				7CF232AC2842B33E007D25C6 /* LaunchScreen.storyboard */,
+				7CF232AF2842B33E007D25C6 /* Info.plist */,
+			);
+			path = Xbike;
+			sourceTree = "<group>";
+		};
+		7CF232B72842B33E007D25C6 /* XbikeTests */ = {
+			isa = PBXGroup;
+			children = (
+				7CF232B82842B33E007D25C6 /* XbikeTests.swift */,
+			);
+			path = XbikeTests;
+			sourceTree = "<group>";
+		};
+		7CF232C12842B33E007D25C6 /* XbikeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7CF232C22842B33E007D25C6 /* XbikeUITests.swift */,
+				7CF232C42842B33E007D25C6 /* XbikeUITestsLaunchTests.swift */,
+			);
+			path = XbikeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7CF2329D2842B33D007D25C6 /* Xbike */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CF232C82842B33E007D25C6 /* Build configuration list for PBXNativeTarget "Xbike" */;
+			buildPhases = (
+				7CF2329A2842B33D007D25C6 /* Sources */,
+				7CF2329B2842B33D007D25C6 /* Frameworks */,
+				7CF2329C2842B33D007D25C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Xbike;
+			productName = Xbike;
+			productReference = 7CF2329E2842B33D007D25C6 /* Xbike.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7CF232B32842B33E007D25C6 /* XbikeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CF232CB2842B33E007D25C6 /* Build configuration list for PBXNativeTarget "XbikeTests" */;
+			buildPhases = (
+				EDA57CD4C823B8528AC46793 /* [CP] Check Pods Manifest.lock */,
+				7CF232B02842B33E007D25C6 /* Sources */,
+				7CF232B12842B33E007D25C6 /* Frameworks */,
+				7CF232B22842B33E007D25C6 /* Resources */,
+				46CC3F9A495534149ACE8F7A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CF232B62842B33E007D25C6 /* PBXTargetDependency */,
+			);
+			name = XbikeTests;
+			productName = XbikeTests;
+			productReference = 7CF232B42842B33E007D25C6 /* XbikeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7CF232BD2842B33E007D25C6 /* XbikeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CF232CE2842B33E007D25C6 /* Build configuration list for PBXNativeTarget "XbikeUITests" */;
+			buildPhases = (
+				3A9454ABE3ABF64AA4DE0109 /* [CP] Check Pods Manifest.lock */,
+				7CF232BA2842B33E007D25C6 /* Sources */,
+				7CF232BB2842B33E007D25C6 /* Frameworks */,
+				7CF232BC2842B33E007D25C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CF232C02842B33E007D25C6 /* PBXTargetDependency */,
+			);
+			name = XbikeUITests;
+			productName = XbikeUITests;
+			productReference = 7CF232BE2842B33E007D25C6 /* XbikeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7CF232962842B33D007D25C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					7CF2329D2842B33D007D25C6 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					7CF232B32842B33E007D25C6 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 7CF2329D2842B33D007D25C6;
+					};
+					7CF232BD2842B33E007D25C6 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 7CF2329D2842B33D007D25C6;
+					};
+				};
+			};
+			buildConfigurationList = 7CF232992842B33D007D25C6 /* Build configuration list for PBXProject "Xbike" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7CF232952842B33D007D25C6;
+			productRefGroup = 7CF2329F2842B33D007D25C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7CF2329D2842B33D007D25C6 /* Xbike */,
+				7CF232B32842B33E007D25C6 /* XbikeTests */,
+				7CF232BD2842B33E007D25C6 /* XbikeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7CF2329C2842B33D007D25C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CF232AE2842B33E007D25C6 /* LaunchScreen.storyboard in Resources */,
+				7CF232AB2842B33E007D25C6 /* Assets.xcassets in Resources */,
+				7C248A242843E15500B46B7D /* GoogleMaps.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CF232B22842B33E007D25C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C248A1B2843E0CB00B46B7D /* GoogleMaps.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CF232BC2842B33E007D25C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C248A1C2843E0CB00B46B7D /* GoogleMaps.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A9454ABE3ABF64AA4DE0109 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Xbike-XbikeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46CC3F9A495534149ACE8F7A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XbikeTests/Pods-XbikeTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XbikeTests/Pods-XbikeTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XbikeTests/Pods-XbikeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDA57CD4C823B8528AC46793 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XbikeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7CF2329A2842B33D007D25C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CF232A62842B33D007D25C6 /* ViewController.swift in Sources */,
+				7C9144222843D11700EB913C /* MapViewController.swift in Sources */,
+				7CF232A22842B33D007D25C6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CF232B02842B33E007D25C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CF232B92842B33E007D25C6 /* XbikeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CF232BA2842B33E007D25C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CF232C52842B33E007D25C6 /* XbikeUITestsLaunchTests.swift in Sources */,
+				7CF232C32842B33E007D25C6 /* XbikeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7CF232B62842B33E007D25C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CF2329D2842B33D007D25C6 /* Xbike */;
+			targetProxy = 7CF232B52842B33E007D25C6 /* PBXContainerItemProxy */;
+		};
+		7CF232C02842B33E007D25C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CF2329D2842B33D007D25C6 /* Xbike */;
+			targetProxy = 7CF232BF2842B33E007D25C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7CF232AC2842B33E007D25C6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CF232AD2842B33E007D25C6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7CF232C62842B33E007D25C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7CF232C72842B33E007D25C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7CF232C92842B33E007D25C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Xbike/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.Xbike;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7CF232CA2842B33E007D25C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Xbike/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.Xbike;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7CF232CC2842B33E007D25C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.XbikeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Xbike.app/Xbike";
+			};
+			name = Debug;
+		};
+		7CF232CD2842B33E007D25C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.XbikeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Xbike.app/Xbike";
+			};
+			name = Release;
+		};
+		7CF232CF2842B33E007D25C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.XbikeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Xbike;
+			};
+			name = Debug;
+		};
+		7CF232D02842B33E007D25C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.XbikeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Xbike;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7CF232992842B33D007D25C6 /* Build configuration list for PBXProject "Xbike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CF232C62842B33E007D25C6 /* Debug */,
+				7CF232C72842B33E007D25C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CF232C82842B33E007D25C6 /* Build configuration list for PBXNativeTarget "Xbike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CF232C92842B33E007D25C6 /* Debug */,
+				7CF232CA2842B33E007D25C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CF232CB2842B33E007D25C6 /* Build configuration list for PBXNativeTarget "XbikeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CF232CC2842B33E007D25C6 /* Debug */,
+				7CF232CD2842B33E007D25C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CF232CE2842B33E007D25C6 /* Build configuration list for PBXNativeTarget "XbikeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CF232CF2842B33E007D25C6 /* Debug */,
+				7CF232D02842B33E007D25C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7CF232962842B33D007D25C6 /* Project object */;
+}
