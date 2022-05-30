@@ -35,7 +35,24 @@
 		7C248A402843E1E500B46B7D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C248A3F2843E1E500B46B7D /* QuartzCore.framework */; };
 		7C248A422843E1EE00B46B7D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C248A412843E1EE00B46B7D /* SystemConfiguration.framework */; };
 		7C248A442843E1F600B46B7D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C248A432843E1F600B46B7D /* UIKit.framework */; };
+		7C248A472843F24000B46B7D /* LocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C248A462843F24000B46B7D /* LocationProvider.swift */; };
+		7C248A482843F24000B46B7D /* LocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C248A462843F24000B46B7D /* LocationProvider.swift */; };
+		7C248A492843F24000B46B7D /* LocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C248A462843F24000B46B7D /* LocationProvider.swift */; };
+		7C248A4B2843F75B00B46B7D /* LocationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C248A4A2843F75B00B46B7D /* LocationObserver.swift */; };
+		7C248A4C2843F75B00B46B7D /* LocationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C248A4A2843F75B00B46B7D /* LocationObserver.swift */; };
+		7C248A4D2843F75B00B46B7D /* LocationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C248A4A2843F75B00B46B7D /* LocationObserver.swift */; };
+		7C2C53A92843FBFC001F5E38 /* LocationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2C53A82843FBFC001F5E38 /* LocationError.swift */; };
+		7C2C53AB28441B0B001F5E38 /* FloatingTimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2C53AA28441B0B001F5E38 /* FloatingTimerController.swift */; };
+		7C560D342844556B00F7BE2E /* RoutesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D332844556B00F7BE2E /* RoutesPresenter.swift */; };
+		7C560D37284455E000F7BE2E /* RoutesViewControllerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D36284455E000F7BE2E /* RoutesViewControllerImpl.swift */; };
+		7C560D3A2844583A00F7BE2E /* RouteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D392844583A00F7BE2E /* RouteCell.swift */; };
+		7C560D3C2844586500F7BE2E /* RouteForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D3B2844586500F7BE2E /* RouteForm.swift */; };
+		7C560D3F28445EF400F7BE2E /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D3E28445EF400F7BE2E /* TabController.swift */; };
+		7C560D422844646F00F7BE2E /* RouteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D412844646F00F7BE2E /* RouteDataSource.swift */; };
+		7C560D452844727B00F7BE2E /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D442844727B00F7BE2E /* OnboardingController.swift */; };
+		7C560D472844736C00F7BE2E /* OnboardingSubscreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D462844736C00F7BE2E /* OnboardingSubscreenController.swift */; };
 		7C9144222843D11700EB913C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9144212843D11700EB913C /* MapViewController.swift */; };
+		7CB6E8C928442D64007A3597 /* MapViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB6E8C828442D64007A3597 /* MapViewPresenter.swift */; };
 		7CF232A22842B33D007D25C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF232A12842B33D007D25C6 /* AppDelegate.swift */; };
 		7CF232A62842B33D007D25C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF232A52842B33D007D25C6 /* ViewController.swift */; };
 		7CF232AB2842B33E007D25C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CF232AA2842B33E007D25C6 /* Assets.xcassets */; };
@@ -83,7 +100,20 @@
 		7C248A3F2843E1E500B46B7D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		7C248A412843E1EE00B46B7D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		7C248A432843E1F600B46B7D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7C248A462843F24000B46B7D /* LocationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationProvider.swift; sourceTree = "<group>"; };
+		7C248A4A2843F75B00B46B7D /* LocationObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationObserver.swift; sourceTree = "<group>"; };
+		7C2C53A82843FBFC001F5E38 /* LocationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationError.swift; sourceTree = "<group>"; };
+		7C2C53AA28441B0B001F5E38 /* FloatingTimerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTimerController.swift; sourceTree = "<group>"; };
+		7C560D332844556B00F7BE2E /* RoutesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesPresenter.swift; sourceTree = "<group>"; };
+		7C560D36284455E000F7BE2E /* RoutesViewControllerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesViewControllerImpl.swift; sourceTree = "<group>"; };
+		7C560D392844583A00F7BE2E /* RouteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteCell.swift; sourceTree = "<group>"; };
+		7C560D3B2844586500F7BE2E /* RouteForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteForm.swift; sourceTree = "<group>"; };
+		7C560D3E28445EF400F7BE2E /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
+		7C560D412844646F00F7BE2E /* RouteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDataSource.swift; sourceTree = "<group>"; };
+		7C560D442844727B00F7BE2E /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
+		7C560D462844736C00F7BE2E /* OnboardingSubscreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSubscreenController.swift; sourceTree = "<group>"; };
 		7C9144212843D11700EB913C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		7CB6E8C828442D64007A3597 /* MapViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewPresenter.swift; sourceTree = "<group>"; };
 		7CF2329E2842B33D007D25C6 /* Xbike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xbike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CF232A12842B33D007D25C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CF232A52842B33D007D25C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -173,10 +203,75 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7C248A452843F09700B46B7D /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				7C248A462843F24000B46B7D /* LocationProvider.swift */,
+				7C248A4A2843F75B00B46B7D /* LocationObserver.swift */,
+				7C2C53A82843FBFC001F5E38 /* LocationError.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		7C560D322844554B00F7BE2E /* RoutesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7C560D35284455D100F7BE2E /* Presenting */,
+				7C560D332844556B00F7BE2E /* RoutesPresenter.swift */,
+			);
+			path = RoutesViewController;
+			sourceTree = "<group>";
+		};
+		7C560D35284455D100F7BE2E /* Presenting */ = {
+			isa = PBXGroup;
+			children = (
+				7C560D382844581200F7BE2E /* TableViewComponent */,
+				7C560D36284455E000F7BE2E /* RoutesViewControllerImpl.swift */,
+			);
+			path = Presenting;
+			sourceTree = "<group>";
+		};
+		7C560D382844581200F7BE2E /* TableViewComponent */ = {
+			isa = PBXGroup;
+			children = (
+				7C560D392844583A00F7BE2E /* RouteCell.swift */,
+				7C560D3B2844586500F7BE2E /* RouteForm.swift */,
+			);
+			path = TableViewComponent;
+			sourceTree = "<group>";
+		};
+		7C560D3D28445E7C00F7BE2E /* TabController */ = {
+			isa = PBXGroup;
+			children = (
+				7C560D3E28445EF400F7BE2E /* TabController.swift */,
+			);
+			path = TabController;
+			sourceTree = "<group>";
+		};
+		7C560D402844642A00F7BE2E /* RouteDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				7C560D412844646F00F7BE2E /* RouteDataSource.swift */,
+			);
+			path = RouteDataSource;
+			sourceTree = "<group>";
+		};
+		7C560D432844726800F7BE2E /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				7C560D442844727B00F7BE2E /* OnboardingController.swift */,
+				7C560D462844736C00F7BE2E /* OnboardingSubscreenController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 		7C9144202843D0FB00EB913C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				7C9144232843D12C00EB913C /* Presenting */,
+				7C560D432844726800F7BE2E /* Onboarding */,
+				7C560D3D28445E7C00F7BE2E /* TabController */,
+				7C560D322844554B00F7BE2E /* RoutesViewController */,
+				7CB6E8CA28442D69007A3597 /* MapViewController */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -185,8 +280,18 @@
 			isa = PBXGroup;
 			children = (
 				7C9144212843D11700EB913C /* MapViewController.swift */,
+				7C2C53AA28441B0B001F5E38 /* FloatingTimerController.swift */,
 			);
 			path = Presenting;
+			sourceTree = "<group>";
+		};
+		7CB6E8CA28442D69007A3597 /* MapViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7CB6E8C828442D64007A3597 /* MapViewPresenter.swift */,
+				7C9144232843D12C00EB913C /* Presenting */,
+			);
+			path = MapViewController;
 			sourceTree = "<group>";
 		};
 		7CF232952842B33D007D25C6 = {
@@ -214,6 +319,8 @@
 		7CF232A02842B33D007D25C6 /* Xbike */ = {
 			isa = PBXGroup;
 			children = (
+				7C560D402844642A00F7BE2E /* RouteDataSource */,
+				7C248A452843F09700B46B7D /* Location */,
 				7C9144202843D0FB00EB913C /* Modules */,
 				7CF232A12842B33D007D25C6 /* AppDelegate.swift */,
 				7CF232A52842B33D007D25C6 /* ViewController.swift */,
@@ -441,9 +548,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C560D422844646F00F7BE2E /* RouteDataSource.swift in Sources */,
+				7C560D3F28445EF400F7BE2E /* TabController.swift in Sources */,
+				7C560D342844556B00F7BE2E /* RoutesPresenter.swift in Sources */,
+				7C560D3C2844586500F7BE2E /* RouteForm.swift in Sources */,
 				7CF232A62842B33D007D25C6 /* ViewController.swift in Sources */,
+				7C248A4B2843F75B00B46B7D /* LocationObserver.swift in Sources */,
+				7CB6E8C928442D64007A3597 /* MapViewPresenter.swift in Sources */,
+				7C560D472844736C00F7BE2E /* OnboardingSubscreenController.swift in Sources */,
+				7C560D3A2844583A00F7BE2E /* RouteCell.swift in Sources */,
+				7C560D452844727B00F7BE2E /* OnboardingController.swift in Sources */,
+				7C248A472843F24000B46B7D /* LocationProvider.swift in Sources */,
+				7C2C53A92843FBFC001F5E38 /* LocationError.swift in Sources */,
 				7C9144222843D11700EB913C /* MapViewController.swift in Sources */,
+				7C560D37284455E000F7BE2E /* RoutesViewControllerImpl.swift in Sources */,
 				7CF232A22842B33D007D25C6 /* AppDelegate.swift in Sources */,
+				7C2C53AB28441B0B001F5E38 /* FloatingTimerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,7 +571,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C248A4C2843F75B00B46B7D /* LocationObserver.swift in Sources */,
 				7CF232B92842B33E007D25C6 /* XbikeTests.swift in Sources */,
+				7C248A482843F24000B46B7D /* LocationProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +583,8 @@
 			files = (
 				7CF232C52842B33E007D25C6 /* XbikeUITestsLaunchTests.swift in Sources */,
 				7CF232C32842B33E007D25C6 /* XbikeUITests.swift in Sources */,
+				7C248A4D2843F75B00B46B7D /* LocationObserver.swift in Sources */,
+				7C248A492843F24000B46B7D /* LocationProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
