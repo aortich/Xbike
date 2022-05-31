@@ -18,7 +18,7 @@ class FloatingTimerView: UIView {
     private lazy var timer: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.systemFont(ofSize: 19.0, weight: .light)
+        label.font = UIFont.stopwatchFont
         label.text = "00:00:00"
         return label
     }()
@@ -28,6 +28,7 @@ class FloatingTimerView: UIView {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("START", for: .normal)
         button.setTitleColor(.orange, for: .normal)
+        button.titleLabel?.font = UIFont.buttonFont
         return button
     }()
     
@@ -36,6 +37,7 @@ class FloatingTimerView: UIView {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("STOP", for: .normal)
         button.setTitleColor(.lightGray, for: .normal)
+        button.titleLabel?.font = UIFont.buttonFont
         return button
     }()
     
@@ -66,6 +68,9 @@ class FloatingTimerView: UIView {
     
     private func setupViews() {
         self.backgroundColor = .white
+        self.addDropShadow()
+        self.roundCorners()
+        
         self.addSubview(timer)
         self.addSubview(startButton)
         self.addSubview(finishButton)
@@ -85,4 +90,6 @@ class FloatingTimerView: UIView {
             finishButton.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -FloatingTimerView.Constants.bottom)
         ])
     }
+    
+    
 }

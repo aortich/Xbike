@@ -51,13 +51,15 @@ class MapViewPresenter {
         
         let alert = saveAlert(self.finalTime, distance: self.finalDistance)
         self.view.removeTimerSubview()
+        
         self.view.present(alert, animated: true, completion: nil)
     }
     
     func saveRoute() {
         let dataSource = RouteDataSource.shared
         dataSource.addRoute(route: RouteCell.ViewModel(time: finalTime, distance: finalDistance))
-        self.view.present(self.savedSuccessAlert(), animated: true)
+        self.view.clearPath()
+        XbikeAlert.showSimpleAlert(with: "Your progress has been correctly stored!", on: self.view)
     }
     
     private func getFormattedElapsed(elapsed: CFAbsoluteTime) -> String {
@@ -101,7 +103,9 @@ class MapViewPresenter {
             self.saveRoute()
         }
         
-        let deleteAction = UIAlertAction(title: "Delete", style: .cancel)
+        let deleteAction = UIAlertAction(title: "Delete", style: .cancel) { _ in
+            self.view.clearPath()
+        }
         
         alertController.addAction(storeAction)
         alertController.addAction(deleteAction)

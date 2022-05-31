@@ -18,6 +18,7 @@ class TabController: UITabBarController, UITabBarControllerDelegate {
         super.viewWillAppear(animated)
         let tabMap = UINavigationController(rootViewController: MapViewControllerImpl())
         let tabMapItem = UITabBarItem(title: "Current Ride", image: nil, tag: 1)
+        
         tabMap.tabBarItem = tabMapItem
         
         let tabRoutes = UINavigationController(rootViewController: RoutesViewControllerImpl())
@@ -25,6 +26,9 @@ class TabController: UITabBarController, UITabBarControllerDelegate {
         tabRoutes.tabBarItem = tabRoutesItem
         
         self.viewControllers = [tabMap, tabRoutes]
+        
+        
+        
     }
     
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {

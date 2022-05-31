@@ -51,6 +51,18 @@
 		7C560D422844646F00F7BE2E /* RouteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D412844646F00F7BE2E /* RouteDataSource.swift */; };
 		7C560D452844727B00F7BE2E /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D442844727B00F7BE2E /* OnboardingController.swift */; };
 		7C560D472844736C00F7BE2E /* OnboardingSubscreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D462844736C00F7BE2E /* OnboardingSubscreenController.swift */; };
+		7C560D4A28455BFF00F7BE2E /* XbikeAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D4928455BFF00F7BE2E /* XbikeAlert.swift */; };
+		7C560D4D28457DE900F7BE2E /* XbikeSimpleAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D4C28457DE900F7BE2E /* XbikeSimpleAlert.swift */; };
+		7C560D4F284581A500F7BE2E /* XBikeActionAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D4E284581A500F7BE2E /* XBikeActionAlert.swift */; };
+		7C560D5328458B1F00F7BE2E /* Abel-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C560D5228458B1F00F7BE2E /* Abel-Regular.ttf */; };
+		7C560D5428458B1F00F7BE2E /* Abel-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C560D5228458B1F00F7BE2E /* Abel-Regular.ttf */; };
+		7C560D5528458B1F00F7BE2E /* Abel-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C560D5228458B1F00F7BE2E /* Abel-Regular.ttf */; };
+		7C560D5728458BBF00F7BE2E /* UIFont+CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D5628458BBF00F7BE2E /* UIFont+CustomFont.swift */; };
+		7C560D5828458BBF00F7BE2E /* UIFont+CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D5628458BBF00F7BE2E /* UIFont+CustomFont.swift */; };
+		7C560D5928458BBF00F7BE2E /* UIFont+CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D5628458BBF00F7BE2E /* UIFont+CustomFont.swift */; };
+		7C560D5C2845902C00F7BE2E /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D5B2845902C00F7BE2E /* UIView+Extensions.swift */; };
+		7C560D5D2845902C00F7BE2E /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D5B2845902C00F7BE2E /* UIView+Extensions.swift */; };
+		7C560D5E2845902C00F7BE2E /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D5B2845902C00F7BE2E /* UIView+Extensions.swift */; };
 		7C9144222843D11700EB913C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9144212843D11700EB913C /* MapViewController.swift */; };
 		7CB6E8C928442D64007A3597 /* MapViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB6E8C828442D64007A3597 /* MapViewPresenter.swift */; };
 		7CF232A22842B33D007D25C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF232A12842B33D007D25C6 /* AppDelegate.swift */; };
@@ -112,6 +124,12 @@
 		7C560D412844646F00F7BE2E /* RouteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDataSource.swift; sourceTree = "<group>"; };
 		7C560D442844727B00F7BE2E /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
 		7C560D462844736C00F7BE2E /* OnboardingSubscreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSubscreenController.swift; sourceTree = "<group>"; };
+		7C560D4928455BFF00F7BE2E /* XbikeAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XbikeAlert.swift; sourceTree = "<group>"; };
+		7C560D4C28457DE900F7BE2E /* XbikeSimpleAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XbikeSimpleAlert.swift; sourceTree = "<group>"; };
+		7C560D4E284581A500F7BE2E /* XBikeActionAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XBikeActionAlert.swift; sourceTree = "<group>"; };
+		7C560D5228458B1F00F7BE2E /* Abel-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Abel-Regular.ttf"; sourceTree = "<group>"; };
+		7C560D5628458BBF00F7BE2E /* UIFont+CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+CustomFont.swift"; sourceTree = "<group>"; };
+		7C560D5B2845902C00F7BE2E /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		7C9144212843D11700EB913C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		7CB6E8C828442D64007A3597 /* MapViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewPresenter.swift; sourceTree = "<group>"; };
 		7CF2329E2842B33D007D25C6 /* Xbike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xbike.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -265,6 +283,50 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		7C560D4828455BF000F7BE2E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				7C560D5A2845901F00F7BE2E /* UIView */,
+				7C560D5028458A8200F7BE2E /* UIFont */,
+				7C560D4B28457BBA00F7BE2E /* Alerts */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		7C560D4B28457BBA00F7BE2E /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				7C560D4928455BFF00F7BE2E /* XbikeAlert.swift */,
+				7C560D4C28457DE900F7BE2E /* XbikeSimpleAlert.swift */,
+				7C560D4E284581A500F7BE2E /* XBikeActionAlert.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		7C560D5028458A8200F7BE2E /* UIFont */ = {
+			isa = PBXGroup;
+			children = (
+				7C560D5628458BBF00F7BE2E /* UIFont+CustomFont.swift */,
+			);
+			path = UIFont;
+			sourceTree = "<group>";
+		};
+		7C560D5128458B0E00F7BE2E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7C560D5228458B1F00F7BE2E /* Abel-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		7C560D5A2845901F00F7BE2E /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				7C560D5B2845902C00F7BE2E /* UIView+Extensions.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
 		7C9144202843D0FB00EB913C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
@@ -319,6 +381,8 @@
 		7CF232A02842B33D007D25C6 /* Xbike */ = {
 			isa = PBXGroup;
 			children = (
+				7C560D5128458B0E00F7BE2E /* Fonts */,
+				7C560D4828455BF000F7BE2E /* Common */,
 				7C560D402844642A00F7BE2E /* RouteDataSource */,
 				7C248A452843F09700B46B7D /* Location */,
 				7C9144202843D0FB00EB913C /* Modules */,
@@ -458,6 +522,7 @@
 				7CF232AE2842B33E007D25C6 /* LaunchScreen.storyboard in Resources */,
 				7CF232AB2842B33E007D25C6 /* Assets.xcassets in Resources */,
 				7C248A242843E15500B46B7D /* GoogleMaps.bundle in Resources */,
+				7C560D5328458B1F00F7BE2E /* Abel-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +531,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C248A1B2843E0CB00B46B7D /* GoogleMaps.bundle in Resources */,
+				7C560D5428458B1F00F7BE2E /* Abel-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +540,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C248A1C2843E0CB00B46B7D /* GoogleMaps.bundle in Resources */,
+				7C560D5528458B1F00F7BE2E /* Abel-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,6 +615,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C560D5C2845902C00F7BE2E /* UIView+Extensions.swift in Sources */,
 				7C560D422844646F00F7BE2E /* RouteDataSource.swift in Sources */,
 				7C560D3F28445EF400F7BE2E /* TabController.swift in Sources */,
 				7C560D342844556B00F7BE2E /* RoutesPresenter.swift in Sources */,
@@ -559,10 +627,14 @@
 				7C560D3A2844583A00F7BE2E /* RouteCell.swift in Sources */,
 				7C560D452844727B00F7BE2E /* OnboardingController.swift in Sources */,
 				7C248A472843F24000B46B7D /* LocationProvider.swift in Sources */,
+				7C560D4A28455BFF00F7BE2E /* XbikeAlert.swift in Sources */,
+				7C560D4D28457DE900F7BE2E /* XbikeSimpleAlert.swift in Sources */,
 				7C2C53A92843FBFC001F5E38 /* LocationError.swift in Sources */,
 				7C9144222843D11700EB913C /* MapViewController.swift in Sources */,
 				7C560D37284455E000F7BE2E /* RoutesViewControllerImpl.swift in Sources */,
+				7C560D5728458BBF00F7BE2E /* UIFont+CustomFont.swift in Sources */,
 				7CF232A22842B33D007D25C6 /* AppDelegate.swift in Sources */,
+				7C560D4F284581A500F7BE2E /* XBikeActionAlert.swift in Sources */,
 				7C2C53AB28441B0B001F5E38 /* FloatingTimerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -571,7 +643,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C560D5828458BBF00F7BE2E /* UIFont+CustomFont.swift in Sources */,
 				7C248A4C2843F75B00B46B7D /* LocationObserver.swift in Sources */,
+				7C560D5D2845902C00F7BE2E /* UIView+Extensions.swift in Sources */,
 				7CF232B92842B33E007D25C6 /* XbikeTests.swift in Sources */,
 				7C248A482843F24000B46B7D /* LocationProvider.swift in Sources */,
 			);
@@ -581,7 +655,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C560D5E2845902C00F7BE2E /* UIView+Extensions.swift in Sources */,
 				7CF232C52842B33E007D25C6 /* XbikeUITestsLaunchTests.swift in Sources */,
+				7C560D5928458BBF00F7BE2E /* UIFont+CustomFont.swift in Sources */,
 				7CF232C32842B33E007D25C6 /* XbikeUITests.swift in Sources */,
 				7C248A4D2843F75B00B46B7D /* LocationObserver.swift in Sources */,
 				7C248A492843F24000B46B7D /* LocationProvider.swift in Sources */,

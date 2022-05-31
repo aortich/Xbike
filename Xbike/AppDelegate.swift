@@ -27,21 +27,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.navController = navController
         }
         
-        
-        
         window.makeKeyAndVisible()
         window.backgroundColor = .orange
         window.rootViewController = self.navController
         
         self.navController?.setNavigationBarHidden(true, animated: false)
         
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font : UIFont.tabBarItemFont ?? UIFont.systemFont(ofSize: 14)], for: .normal)
+        UITabBar.appearance().tintColor = .orange
+        
         UINavigationBar.appearance().tintColor = UIColor.white
-        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
+        UINavigationBar.appearance().titleTextAttributes =
+            [NSAttributedString.Key.foregroundColor : UIColor.white,
+             NSAttributedString.Key.font : UIFont.navbarTitleFont ?? UIFont.systemFont(ofSize: 20)]
         
         return true
     }
     
-    func appHasLaunched() -> Bool{
+    func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        return true
+    }
+    
+    private func appHasLaunched() -> Bool{
         let defaults = UserDefaults.standard
         if defaults.bool(forKey: "appHasLaunched"){
             return true

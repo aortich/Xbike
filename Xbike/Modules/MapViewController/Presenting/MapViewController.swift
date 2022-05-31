@@ -10,6 +10,9 @@ import UIKit
 import MapKit
 
 public class MapViewControllerImpl: UIViewController {
+    struct Constants {
+        static let stopwatchPadding: CGFloat = 8.0
+    }
     var presenter: MapViewPresenter?
     var polyline: MKPolyline?
     
@@ -47,7 +50,6 @@ public class MapViewControllerImpl: UIViewController {
     
     public override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-       
     }
     
     private func setupViews() {
@@ -68,17 +70,19 @@ public class MapViewControllerImpl: UIViewController {
         subView.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(subView)
         NSLayoutConstraint.activate([
-            subView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            subView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -MapViewControllerImpl.Constants.stopwatchPadding),
             subView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             subView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.2),
-            subView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.8)
+            subView.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.87)
         ])
         
         self.floatView = subView
         self.floatView?.onClickStarted = self.startTimer(sender:)
         self.floatView?.onClickedFinish = self.endTimer(sender:)
     }
-    
+}
+
+extension MapViewControllerImpl {
     func removeTimerSubview() {
         floatView?.removeFromSuperview()
         floatView = nil
@@ -96,9 +100,7 @@ public class MapViewControllerImpl: UIViewController {
         if floatView == nil { return }
         self.floatView?.updateTimer(elapsed)
     }
-}
-
-extension MapViewControllerImpl {
+    
     func receivedInitialLocation(region: MKCoordinateRegion) {
         self.mapView.setRegion(region, animated: true)
         self.mapView.showsUserLocation = true
@@ -107,9 +109,7 @@ extension MapViewControllerImpl {
     func showPermissionDeniedError(_ alert: UIAlertController) {
         self.present(alert, animated: true)
     }
-}
-
-extension MapViewControllerImpl {
+    
     func drawPath(routes: [CLLocationCoordinate2D]) {
         if(routes.isEmpty) { return }
         DispatchQueue.main.async {
@@ -120,9 +120,8 @@ extension MapViewControllerImpl {
     
     func clearPath() {
         DispatchQueue.main.async {
-            if let polyline = self.polyline {
-                self.mapView.removeOverlay(polyline)
-            }
+            let overlays = self.mapView.overlays
+            self.mapView.removeOverlays(overlays)
         }
     }
 }
