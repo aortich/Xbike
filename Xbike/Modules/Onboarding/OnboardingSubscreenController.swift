@@ -8,14 +8,23 @@
 import UIKit
 
 class OnboardingSubscreenController: UIViewController {
+    struct Constants {
+        static let paddingImage: CGFloat = 15.0
+    }
     private lazy var label: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.systemFont(ofSize: 30)
+        label.font = UIFont.stopwatchFont
         label.textColor = .white
         label.textAlignment = .center
         label.numberOfLines = 0
         return label
+    }()
+    
+    private lazy var imageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
     }()
     
     override func viewDidLoad() {
@@ -26,9 +35,13 @@ class OnboardingSubscreenController: UIViewController {
     
     func setupView() {
         self.view.addSubview(label)
+        self.view.addSubview(imageView)
         NSLayoutConstraint.activate([
+            imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: OnboardingSubscreenController.Constants.paddingImage),
+            
             label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            label.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            label.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 8.0),
             label.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.7),
         ])
     }
@@ -36,4 +49,8 @@ class OnboardingSubscreenController: UIViewController {
     func updateText(_ string: String) {
         self.label.text = string
     }
-}
+    
+    func updateImage(_ image: UIImage) {
+        self.imageView.image = image
+    }
+ }

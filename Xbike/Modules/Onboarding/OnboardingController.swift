@@ -18,12 +18,15 @@ class OnboardingController: UIPageViewController, UIPageViewControllerDataSource
         self.delegate = self
         let initialPage = 0
         let page1 = OnboardingSubscreenController()
+        page1.updateImage(UIImage(named: "standing") ?? UIImage())
         page1.updateText("Extremely simple to use")
         
         let page2 = OnboardingSubscreenController()
+        page2.updateImage(UIImage(named: "stopwatch") ?? UIImage())
         page2.updateText("Track your time and distance")
         
         let page3 = OnboardingSubscreenController()
+        page3.updateImage(UIImage(named: "effort") ?? UIImage())
         page3.updateText("See your progress and challenge yourself!")
         
         self.pages.append(page1)
@@ -42,10 +45,8 @@ class OnboardingController: UIPageViewController, UIPageViewControllerDataSource
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         if let viewControllerIndex = self.pages.firstIndex(of: viewController as! OnboardingSubscreenController) {
                 if viewControllerIndex == 0 {
-                    // wrap to last page in array
                     return self.pages.last
                 } else {
-                    // go to previous page in array
                     return self.pages[viewControllerIndex - 1]
                 }
             }

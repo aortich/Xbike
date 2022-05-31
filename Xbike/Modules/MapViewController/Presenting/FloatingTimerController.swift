@@ -12,7 +12,8 @@ class FloatingTimerView: UIView {
     struct Constants {
         static let top: CGFloat = 10.0
         static let bottom: CGFloat = 10.0
-        static let sides: CGFloat = 30.0
+        static let sides: CGFloat = 80.0
+        static let separatorWidth: CGFloat = 2.0
     }
     
     private lazy var timer: UILabel = {
@@ -39,6 +40,13 @@ class FloatingTimerView: UIView {
         button.setTitleColor(.lightGray, for: .normal)
         button.titleLabel?.font = UIFont.buttonFont
         return button
+    }()
+    
+    private let separator: UIView = {
+        let view = UIView()
+        view.backgroundColor = .orange
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
     }()
     
     public var onClickStarted: ((UIButton?) -> ())?
@@ -74,6 +82,7 @@ class FloatingTimerView: UIView {
         self.addSubview(timer)
         self.addSubview(startButton)
         self.addSubview(finishButton)
+        self.addSubview(separator)
         startButton.addTarget(self, action: #selector(self.clickedOnStarted(_:)), for: .touchUpInside)
         finishButton.addTarget(self, action: #selector(self.clickedOnFinished(_:)), for: .touchUpInside)
         
@@ -87,7 +96,12 @@ class FloatingTimerView: UIView {
             
             finishButton.topAnchor.constraint(equalTo: self.timer.bottomAnchor, constant: FloatingTimerView.Constants.top),
             finishButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -FloatingTimerView.Constants.sides),
-            finishButton.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -FloatingTimerView.Constants.bottom)
+            finishButton.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -FloatingTimerView.Constants.bottom),
+            
+            separator.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.2),
+            separator.widthAnchor.constraint(equalToConstant: FloatingTimerView.Constants.separatorWidth),
+            separator.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+            separator.centerYAnchor.constraint(equalTo: finishButton.centerYAnchor)
         ])
     }
     

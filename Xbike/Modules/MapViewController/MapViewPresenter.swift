@@ -38,6 +38,11 @@ class MapViewPresenter {
         self.timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
     }
     
+    @objc func updateTimer() {
+        let interval = CFAbsoluteTimeGetCurrent() - self.start
+        self.view.setTimerElapsed(elapsed: getFormattedElapsed(elapsed: interval))
+    }
+    
     func stopTimer() {
         let finalInterval =  CFAbsoluteTimeGetCurrent() - self.start
         self.finalDistance = "0.00 mts"
@@ -49,8 +54,6 @@ class MapViewPresenter {
         timer?.invalidate()
         timer = nil
         
-        //let alert = saveAlert(self.finalTime, distance: self.finalDistance)
-        
         self.view.removeTimerSubview()
         
         XbikeAlert.showAlertWithButtons(
@@ -60,8 +63,6 @@ class MapViewPresenter {
             } onCancelled: {
                 self.view.clearPath()
             }
-        
-        //self.view.present(alert, animated: true, completion: nil)
     }
     
     func saveRoute() {
@@ -97,11 +98,7 @@ class MapViewPresenter {
         return result
     }
     
-    @objc func updateTimer() {
-        let interval = CFAbsoluteTimeGetCurrent() - self.start
-        self.view.setTimerElapsed(elapsed: getFormattedElapsed(elapsed: interval))
-    }
-    
+
     private func locationAlert() -> UIAlertController {
         let alertController = UIAlertController(title: "App needs location permitions enabled", message: "Do you wish to to enable location permissions from the settings screen?", preferredStyle: .alert)
         
@@ -121,28 +118,6 @@ class MapViewPresenter {
         let cancelAction = UIAlertAction(title: "Cancelar", style: .cancel)
         alertController.addAction(cancelAction)
         
-        return alertController
-    }
-    
-    private func saveAlert(_ elapsedTime: String, distance: String) -> UIAlertController {
-        let alertController = UIAlertController(title: "", message: "Your time was \n \(elapsedTime) \n Distance \n \(distance)", preferredStyle: .alert)
-        let storeAction = UIAlertAction(title: "Store", style: .default) {_ in
-            self.saveRoute()
-        }
-        
-        let deleteAction = UIAlertAction(title: "Delete", style: .cancel) { _ in
-            self.view.clearPath()
-        }
-        
-        alertController.addAction(storeAction)
-        alertController.addAction(deleteAction)
-        return alertController
-    }
-    
-    private func savedSuccessAlert() -> UIAlertController {
-        let alertController = UIAlertController(title: "", message: "Your progress has been correcly stored!", preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .cancel)
-        alertController.addAction(okAction)
         return alertController
     }
 }
