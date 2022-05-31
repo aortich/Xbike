@@ -46,11 +46,7 @@ class MapViewPresenter {
     func stopTimer() {
         if(timer == nil) { return }
         let finalInterval =  CFAbsoluteTimeGetCurrent() - self.start
-        self.finalDistance = "0.00 mts"
-        if let firstLocation = self.locations.first,
-           let finalLocation = self.locations.last {
-            self.finalDistance = String(format: "%.2f mts", firstLocation.distance(from: finalLocation))
-        }
+        self.finalDistance = String(format: "%.2f mts", calculateFinalDistance(self.locations))
         self.finalTime = getFormattedElapsed(elapsed: finalInterval)
         timer?.invalidate()
         timer = nil
@@ -66,6 +62,15 @@ class MapViewPresenter {
             }
     }
     
+    private func calculateFinalDistance(_ locations: [CLLocation]) -> Double {
+        let distances = zip(locations.dropFirst(), locations).map { a, b in
+            a.distance(from: b)
+        }
+        return distances.reduce(0.0) { a, b in
+            a + b
+        }
+    }
+    
     func saveRoute() {
         let dataSource = RouteDataSource.shared
         dataSource.addRoute(route: RouteCell.ViewModel(time: finalTime, distance: finalDistance))
@@ -73,12 +78,12 @@ class MapViewPresenter {
         XbikeAlert.showSimpleAlert(with: "Your progress has been correctly stored!", on: self.view)
     }
     
-    private func getFormattedElapsed(elapsed: CFAbsoluteTime) -> String {
+    private func getFormattedElapsed(elapsed: Double) -> String {
         let ms = elapsed.truncatingRemainder(dividingBy: 1) * 10000
         let seconds = elapsed.truncatingRemainder(dividingBy: 60)
-        let minutes = elapsed / 60
-        let hours = elapsed / 3600
-       return String(format: "%02.f:%02.f:%02.f:%04.f", hours, minutes, seconds, ms)
+        let minutes = floor(elapsed / 60.0)
+        let hours = floor(elapsed / 3600.0)
+        return String(format: "%02.f:%02.f:%02.f:%04.f", hours, minutes, seconds, ms)
     }
     
     private func makeResultAttributedString(elapsed: String, distance: String) -> NSAttributedString {
