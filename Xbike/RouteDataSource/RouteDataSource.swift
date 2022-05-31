@@ -9,27 +9,41 @@ import Foundation
 
 class RouteDataSource {
     static let shared = RouteDataSource()
-    let cache: NSCache<NSString, NSArray>
     let modelKey: String = "routes"
+    let defaults: UserDefaults
     
     private init() {
-        self.cache = NSCache<NSString, NSArray>()
+        defaults = UserDefaults.standard
     }
     
-    func addRoute(route: RouteCell.ViewModel) {
-        if var array = cache.object(forKey: modelKey as NSString) as? [RouteCell.ViewModel] {
-            array.append(route)
-            cache.setObject(array as NSArray, forKey: modelKey as NSString)
+    func addRoute(route: Route) {
+        if let json = defaults.string(forKey: modelKey),
+           let data = json.data(using: .utf8),
+           var routes = try? JSONDecoder().decode(Routes.self, from: data).routes {
+            routes.append(route)
+            defaults.set(convertArrayToString(Routes(routes: routes)), forKey: modelKey)
             return
+            
         }
-        
-        cache.setObject([route], forKey: modelKey as NSString)
+        defaults.set(convertArrayToString(Routes(routes: [route])), forKey: modelKey)
     }
     
-    func retrieveRoutes() -> [RouteCell.ViewModel] {
-        guard let array = cache.object(forKey: modelKey as NSString) as? [RouteCell.ViewModel] else {
+    func retrieveRoutes() -> [Route] {
+        guard let json = defaults.string(forKey: modelKey),
+              let data = json.data(using: .utf8),
+              let array = try? JSONDecoder().decode(Routes.self, from: data) else {
             return []
         }
-        return array
+        
+        return array.routes
+    }
+    
+    private func convertArrayToString(_ routes: Routes) -> String {
+        guard let data = try? JSONEncoder().encode(routes),
+              let json = String(data: data, encoding: .utf8) else {
+            return ""
+        }
+        
+        return json
     }
 }

@@ -63,6 +63,9 @@
 		7C560D5C2845902C00F7BE2E /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D5B2845902C00F7BE2E /* UIView+Extensions.swift */; };
 		7C560D5D2845902C00F7BE2E /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D5B2845902C00F7BE2E /* UIView+Extensions.swift */; };
 		7C560D5E2845902C00F7BE2E /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D5B2845902C00F7BE2E /* UIView+Extensions.swift */; };
+		7C560D6A2845E18100F7BE2E /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D692845E18100F7BE2E /* Route.swift */; };
+		7C560D6B2845E18100F7BE2E /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D692845E18100F7BE2E /* Route.swift */; };
+		7C560D6C2845E18100F7BE2E /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D692845E18100F7BE2E /* Route.swift */; };
 		7C9144222843D11700EB913C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9144212843D11700EB913C /* MapViewController.swift */; };
 		7CB6E8C928442D64007A3597 /* MapViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB6E8C828442D64007A3597 /* MapViewPresenter.swift */; };
 		7CF232A22842B33D007D25C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF232A12842B33D007D25C6 /* AppDelegate.swift */; };
@@ -131,6 +134,7 @@
 		7C560D5628458BBF00F7BE2E /* UIFont+CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+CustomFont.swift"; sourceTree = "<group>"; };
 		7C560D5B2845902C00F7BE2E /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		7C560D6328459D1400F7BE2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7C560D692845E18100F7BE2E /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
 		7C9144212843D11700EB913C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		7CB6E8C828442D64007A3597 /* MapViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewPresenter.swift; sourceTree = "<group>"; };
 		7CF2329E2842B33D007D25C6 /* Xbike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xbike.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -269,6 +273,7 @@
 		7C560D402844642A00F7BE2E /* RouteDataSource */ = {
 			isa = PBXGroup;
 			children = (
+				7C560D682845E17100F7BE2E /* Models */,
 				7C560D412844646F00F7BE2E /* RouteDataSource.swift */,
 			);
 			path = RouteDataSource;
@@ -325,6 +330,14 @@
 				7C560D5B2845902C00F7BE2E /* UIView+Extensions.swift */,
 			);
 			path = UIView;
+			sourceTree = "<group>";
+		};
+		7C560D682845E17100F7BE2E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7C560D692845E18100F7BE2E /* Route.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		7C9144202843D0FB00EB913C /* Modules */ = {
@@ -628,6 +641,7 @@
 				7C560D452844727B00F7BE2E /* OnboardingController.swift in Sources */,
 				7C248A472843F24000B46B7D /* LocationProvider.swift in Sources */,
 				7C560D4A28455BFF00F7BE2E /* XbikeAlert.swift in Sources */,
+				7C560D6A2845E18100F7BE2E /* Route.swift in Sources */,
 				7C560D4D28457DE900F7BE2E /* XbikeSimpleAlert.swift in Sources */,
 				7C2C53A92843FBFC001F5E38 /* LocationError.swift in Sources */,
 				7C9144222843D11700EB913C /* MapViewController.swift in Sources */,
@@ -646,6 +660,7 @@
 				7C560D5828458BBF00F7BE2E /* UIFont+CustomFont.swift in Sources */,
 				7C248A4C2843F75B00B46B7D /* LocationObserver.swift in Sources */,
 				7C560D5D2845902C00F7BE2E /* UIView+Extensions.swift in Sources */,
+				7C560D6B2845E18100F7BE2E /* Route.swift in Sources */,
 				7CF232B92842B33E007D25C6 /* XbikeTests.swift in Sources */,
 				7C248A482843F24000B46B7D /* LocationProvider.swift in Sources */,
 			);
@@ -660,6 +675,7 @@
 				7C560D5928458BBF00F7BE2E /* UIFont+CustomFont.swift in Sources */,
 				7CF232C32842B33E007D25C6 /* XbikeUITests.swift in Sources */,
 				7C248A4D2843F75B00B46B7D /* LocationObserver.swift in Sources */,
+				7C560D6C2845E18100F7BE2E /* Route.swift in Sources */,
 				7C248A492843F24000B46B7D /* LocationProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

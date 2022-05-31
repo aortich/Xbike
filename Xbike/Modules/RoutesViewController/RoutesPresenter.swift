@@ -22,6 +22,7 @@ public class RoutesPresenter {
     
     func getItemAt(_ index: Int) -> RouteCell.ViewModel {
         let array = self.dataSource.retrieveRoutes()
+            .map{ RouteCell.ViewModel(time: $0.time, distance: $0.distance) }
         if index >= array.count { return RouteCell.ViewModel(time: "", distance: "") }
         return array[index]
     }

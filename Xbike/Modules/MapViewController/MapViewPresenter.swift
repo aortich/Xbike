@@ -73,7 +73,7 @@ class MapViewPresenter {
     
     func saveRoute() {
         let dataSource = RouteDataSource.shared
-        dataSource.addRoute(route: RouteCell.ViewModel(time: finalTime, distance: finalDistance))
+        dataSource.addRoute(route: Route(time: finalTime, distance: finalDistance))
         self.view.clearPath()
         XbikeAlert.showSimpleAlert(with: "Your progress has been correctly stored!", on: self.view)
     }
