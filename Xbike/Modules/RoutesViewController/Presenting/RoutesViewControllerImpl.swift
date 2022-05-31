@@ -20,7 +20,6 @@ public class RoutesViewControllerImpl: UIViewController {
     public override func viewDidLoad() {
         self.presenter = RoutesPresenter(view: self)
         self.navigationItem.title = "My Progress"
-        self.navigationController?.title = "Please"
         self.title = "My Progress"
         setupViews()
         setupTableView()
@@ -68,6 +67,4 @@ extension RoutesViewControllerImpl: UITableViewDataSource {
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.presenter?.getItemCount() ?? 0
     }
-    
-    
 }

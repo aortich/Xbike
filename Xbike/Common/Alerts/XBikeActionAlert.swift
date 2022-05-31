@@ -13,10 +13,13 @@ class XbikeActionAlert: UIView {
         static let paddingSides: CGFloat = 15.0
         static let paddingButton: CGFloat = 10.0
         static let paddingButtonBottom: CGFloat = 15.0
-        static let paddingButtonSides: CGFloat = 8.0
+        static let paddingButtonSides: CGFloat = 60.0
+        static let separatorWidth: CGFloat = 2.0
     }
     
     private let message: NSAttributedString
+    private let onCompleted: () -> Void
+    private let onCancelled: () -> Void
     
     private lazy var messageLabel: UILabel = {
         let label = UILabel()
@@ -30,7 +33,7 @@ class XbikeActionAlert: UIView {
     private let cancelButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("OK", for: .normal)
+        button.setTitle("DELETE", for: .normal)
         button.setTitleColor(.gray, for: .normal)
         button.titleLabel?.font = UIFont.buttonFont
         return button
@@ -39,20 +42,31 @@ class XbikeActionAlert: UIView {
     private let okButton: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("OK", for: .normal)
-        button.setTitleColor(.gray, for: .normal)
+        button.setTitle("STORE", for: .normal)
+        button.setTitleColor(.orange, for: .normal)
         button.titleLabel?.font = UIFont.buttonFont
         return button
     }()
     
+    private let separator: UIView = {
+        let view = UIView()
+        view.backgroundColor = .orange
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
     override init(frame: CGRect) {
         self.message = NSAttributedString("")
+        self.onCompleted = {}
+        self.onCancelled = {}
         super.init(frame: frame)
         setupViews()
     }
     
-    init(message: NSAttributedString) {
+    init(message: NSAttributedString, onPressed: @escaping () -> Void, onCancelled: @escaping () -> Void) {
         self.message = message
+        self.onCompleted = onPressed
+        self.onCancelled = onCancelled
         super.init(frame: CGRect.zero)
         setupViews()
     }
@@ -64,26 +78,44 @@ class XbikeActionAlert: UIView {
     private func setupViews() {
         self.translatesAutoresizingMaskIntoConstraints = false
         self.backgroundColor = .white
-        self.layer.masksToBounds = true
-        self.layer.cornerRadius = 12
+        self.addDropShadow()
+        self.roundCorners()
         
         self.messageLabel.attributedText = self.message
+        cancelButton.addTarget(self, action: #selector(self.pressedCancel(_:)), for: .touchUpInside)
+        okButton.addTarget(self, action: #selector(self.pressedOk(_:)), for: .touchUpInside)
         self.addSubview(messageLabel)
         self.addSubview(cancelButton)
         self.addSubview(okButton)
+        self.addSubview(separator)
         NSLayoutConstraint.activate([
             messageLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: XbikeActionAlert.Constants.paddingTop),
-            messageLabel.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.7),
+            messageLabel.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.8),
             messageLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-           
+            
             cancelButton.topAnchor.constraint(equalTo: messageLabel.bottomAnchor, constant: XbikeActionAlert.Constants.paddingButton),
             cancelButton.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -XbikeActionAlert.Constants.paddingButtonBottom),
-            cancelButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: XbikeActionAlert.Constants.paddingButtonSides),
+            cancelButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -XbikeActionAlert.Constants.paddingButtonSides),
             
             okButton.topAnchor.constraint(equalTo: messageLabel.bottomAnchor, constant: XbikeActionAlert.Constants.paddingButton),
             okButton.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -XbikeActionAlert.Constants.paddingButtonBottom),
-            okButton.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: XbikeActionAlert.Constants.paddingButtonSides)
+            okButton.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: XbikeActionAlert.Constants.paddingButtonSides),
+            
+            separator.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 0.1),
+            separator.widthAnchor.constraint(equalToConstant: XbikeActionAlert.Constants.separatorWidth),
+            separator.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+            separator.centerYAnchor.constraint(equalTo: okButton.centerYAnchor)
         ])
+    }
+
+    @objc func pressedOk(_ sender: UIButton) {
+        onCompleted()
+        self.dismissAlert()
+    }
+    
+    @objc func pressedCancel(_ sender: UIButton) {
+        onCancelled()
+        self.dismissAlert()
     }
     
     func dismissAlert() {

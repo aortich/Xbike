@@ -49,10 +49,19 @@ class MapViewPresenter {
         timer?.invalidate()
         timer = nil
         
-        let alert = saveAlert(self.finalTime, distance: self.finalDistance)
+        //let alert = saveAlert(self.finalTime, distance: self.finalDistance)
+        
         self.view.removeTimerSubview()
         
-        self.view.present(alert, animated: true, completion: nil)
+        XbikeAlert.showAlertWithButtons(
+            with: makeResultAttributedString(elapsed: self.finalTime, distance: self.finalDistance),
+            on: self.view) {
+                self.saveRoute()
+            } onCancelled: {
+                self.view.clearPath()
+            }
+        
+        //self.view.present(alert, animated: true, completion: nil)
     }
     
     func saveRoute() {
@@ -68,6 +77,24 @@ class MapViewPresenter {
         let minutes = elapsed / 60
         let hours = elapsed / 3600
        return String(format: "%02.f:%02.f:%02.f:%04.f", hours, minutes, seconds, ms)
+    }
+    
+    private func makeResultAttributedString(elapsed: String, distance: String) -> NSAttributedString {
+        let promptAttributes: [NSAttributedString.Key: Any] = [
+            .font: UIFont.navbarTitleFont ?? UIFont.systemFont(ofSize: 20),
+            .foregroundColor: UIColor.black]
+        
+        let dataAttributes: [NSAttributedString.Key: Any] = [
+            .font: UIFont.stopwatchFont ?? UIFont.systemFont(ofSize: 22),
+            .foregroundColor: UIColor.black]
+
+        let result = NSMutableAttributedString()
+        result.append(NSAttributedString(string: "Your time was\n", attributes: promptAttributes))
+        result.append(NSAttributedString(string: "\(elapsed)\n", attributes: dataAttributes))
+        result.append(NSAttributedString(string: "Distance\n", attributes: promptAttributes))
+        result.append(NSAttributedString(string: "\(distance)\n", attributes: dataAttributes))
+        
+        return result
     }
     
     @objc func updateTimer() {

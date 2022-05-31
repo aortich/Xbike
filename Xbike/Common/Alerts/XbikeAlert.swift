@@ -22,7 +22,7 @@ class XbikeAlert {
             return
         }
         
-        let alertView = XbikeActionAlert(message: message)
+        let alertView = XbikeActionAlert(message: message, onPressed: onPressed, onCancelled: onCancelled)
         self.setupAlert(alertView, on: targetView)
     }
     
