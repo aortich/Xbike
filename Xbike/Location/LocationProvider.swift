@@ -20,7 +20,10 @@ class LocationProvider : NSObject, CLLocationManagerDelegate {
         super.init()
         locationManager.delegate = self
         locationManager.requestAlwaysAuthorization()
-        
+        locationManager.pausesLocationUpdatesAutomatically = false
+        locationManager.allowsBackgroundLocationUpdates = true
+        locationManager.activityType = .fitness
+        locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
     }
     
     func determineAuthStatusAction(_ status: CLAuthorizationStatus, requestLocation: () -> Void) {

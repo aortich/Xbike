@@ -24,14 +24,14 @@ class RouteForm: UIView {
     private lazy var timeLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.systemFont(ofSize: 30.0, weight: .light)
+        label.font = UIFont.stopwatchListFont
         return label
     }()
     
     private lazy var distanceLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.systemFont(ofSize: 20.0, weight: .light)
+        label.font = UIFont.navbarTitleFont
         return label
     }()
     
@@ -49,11 +49,11 @@ class RouteForm: UIView {
         self.addSubview(distanceLabel)
  
         NSLayoutConstraint.activate([
-            timeLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: RouteForm.Constants.topBottomMargin),
+            timeLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor),
             timeLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: RouteForm.Constants.marginSides),
             timeLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -RouteForm.Constants.topBottomMargin),
             
-            distanceLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: RouteForm.Constants.innerTopMargin),
+            distanceLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor),
             distanceLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -RouteForm.Constants.topBottomMargin),
             distanceLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -RouteForm.Constants.marginSides)
         ])

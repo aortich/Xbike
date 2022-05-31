@@ -17,21 +17,19 @@ class TabController: UITabBarController, UITabBarControllerDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         let tabMap = UINavigationController(rootViewController: MapViewControllerImpl())
-        let tabMapItem = UITabBarItem(title: "Current Ride", image: nil, tag: 1)
+        let tabMapItem = UITabBarItem(title: "Current Ride", image: UIImage(named: "stopwatch"), tag: 1)
         
         tabMap.tabBarItem = tabMapItem
         
         let tabRoutes = UINavigationController(rootViewController: RoutesViewControllerImpl())
-        let tabRoutesItem = UITabBarItem(title: "My Progress", image: nil, tag: 2)
+        let tabRoutesItem = UITabBarItem(title: "My Progress", image: UIImage(named: "check"), tag: 2)
         tabRoutes.tabBarItem = tabRoutesItem
         
         self.viewControllers = [tabMap, tabRoutes]
         
-        
-        
     }
     
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-        print("selected \(viewController.title)")
+        //do nothing
     }
 }

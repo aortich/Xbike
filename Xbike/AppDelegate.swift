@@ -49,14 +49,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     private func appHasLaunched() -> Bool {
-        return false
-        /*let defaults = UserDefaults.standard
+        let defaults = UserDefaults.standard
         if defaults.bool(forKey: "appHasLaunched"){
             return true
         }else{
             defaults.set(true, forKey: "appHasLaunched")
             return false
-        }*/
+        }
     }
 }
 

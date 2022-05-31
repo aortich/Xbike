@@ -30,14 +30,14 @@ public class MapViewControllerImpl: UIViewController {
         mapView.translatesAutoresizingMaskIntoConstraints = false
         return mapView
     }()
-
+    
     
     private var floatView: FloatingTimerView?
     
     public override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Current Ride"
-        let addBarButtonItem = UIBarButtonItem(title: "Add", style: .done, target: self, action: #selector(addItem))
+        let addBarButtonItem = UIBarButtonItem(image: UIImage(named: "plus"), style: .done, target: self, action: #selector(addItem))
         self.navigationController?.navigationItem.rightBarButtonItem = addBarButtonItem
         self.navigationItem.rightBarButtonItem  = addBarButtonItem
         self.presenter = MapViewPresenter(view: self)

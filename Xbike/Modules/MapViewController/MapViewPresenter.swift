@@ -44,6 +44,7 @@ class MapViewPresenter {
     }
     
     func stopTimer() {
+        if(timer == nil) { return }
         let finalInterval =  CFAbsoluteTimeGetCurrent() - self.start
         self.finalDistance = "0.00 mts"
         if let firstLocation = self.locations.first,

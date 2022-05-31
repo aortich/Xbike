@@ -12,6 +12,10 @@ extension UIFont {
         return UIFont(name: "Abel-Regular", size: 40.0)
     }()
     
+    static let stopwatchListFont = {
+        return UIFont(name: "Abel-Regular", size: 30.0)
+    }()
+    
     static let onboardingFont = {
         return UIFont(name: "Abel-Regular", size: 20.0)
     }()
