@@ -84,10 +84,10 @@ class MapViewPresenterImpl: MapViewPresenter {
     
     private func getFormattedElapsed(elapsed: Double) -> String {
         let ms = elapsed.truncatingRemainder(dividingBy: 1) * 10000
-        let seconds = elapsed.truncatingRemainder(dividingBy: 60)
+        let seconds = Int(floor(elapsed)) % 60
         let minutes = floor(elapsed / 60.0)
         let hours = floor(elapsed / 3600.0)
-        return String(format: "%02.f:%02.f:%02.f:%04.f", hours, minutes, seconds, ms)
+        return String(format: "%02.f:%02.f:%02d:%04.f", hours, minutes, seconds, ms)
     }
     
     private func makeResultAttributedString(elapsed: String, distance: String) -> NSAttributedString {
