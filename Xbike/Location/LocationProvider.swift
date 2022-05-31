@@ -8,11 +8,29 @@
 import CoreLocation
 import UIKit
 
-class LocationProvider : NSObject, CLLocationManagerDelegate {
-    static let shared = LocationProvider()
+protocol LocationProvider {
+    func startLocationTracking()
+    func requestLocation()
+    func addObserver(_ observer: LocationObserver)
+    func removeObserver(_ observer: LocationObserver)
+}
+
+class LocationProviderImpl : NSObject, LocationProvider, CLLocationManagerDelegate {
+    static let shared = LocationProviderImpl()
     private let locationManager: CLLocationManager
     private var observers = [ObjectIdentifier : Observation]()
-    private var state: LocationProvider.State
+    private var state: LocationProviderImpl.State
+    
+    struct Observation {
+        weak var observer: LocationObserver?
+    }
+    
+    enum State {
+        case idle
+        case disallowed
+        case updatedLocation([CLLocation])
+        case failed(Error)
+    }
     
     private override init() {
         locationManager = CLLocationManager()
@@ -26,7 +44,7 @@ class LocationProvider : NSObject, CLLocationManagerDelegate {
         locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
     }
     
-    func determineAuthStatusAction(_ status: CLAuthorizationStatus, requestLocation: () -> Void) {
+    private func determineAuthStatusAction(_ status: CLAuthorizationStatus, requestLocation: () -> Void) {
         switch status {
         case .notDetermined:
             locationManager.requestAlwaysAuthorization()
@@ -80,13 +98,6 @@ class LocationProvider : NSObject, CLLocationManagerDelegate {
         self.state = .failed(error)
         self.stateDidChange()
     }
-}
-
-
-extension LocationProvider {
-    struct Observation {
-        weak var observer: LocationObserver?
-    }
     
     func addObserver(_ observer: LocationObserver) {
         let id = ObjectIdentifier(observer)
@@ -99,7 +110,7 @@ extension LocationProvider {
     }
     
     
-    func stateDidChange() {
+    private func stateDidChange() {
         for (id, observation) in observers {
             guard let observer = observation.observer else {
                 observers.removeValue(forKey: id)
@@ -119,16 +130,6 @@ extension LocationProvider {
         }
     }
 }
-
-private extension LocationProvider {
-    enum State {
-        case idle
-        case disallowed
-        case updatedLocation([CLLocation])
-        case failed(Error)
-    }
-}
-
 
 
 

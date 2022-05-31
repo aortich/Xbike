@@ -7,13 +7,13 @@
 
 import Foundation
 
-public class RoutesPresenter {
+public class RoutesPresenterImpl: RoutesPresenter {
     let view: RoutesViewControllerImpl
     let dataSource: RouteDataSource
     
-    init(view: RoutesViewControllerImpl) {
+    init(view: RoutesViewControllerImpl, service: RouteDataSource = RouteDefaultsDataSource()) {
         self.view = view
-        self.dataSource = RouteDataSource.shared
+        self.dataSource = service
     }
     
     func getItemCount() -> Int {

@@ -9,7 +9,6 @@ import Foundation
 
 enum LocationError: Error {
     case disallowedLocation
-
 }
 
 extension LocationError: LocalizedError {

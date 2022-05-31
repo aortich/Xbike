@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import MapKit
 
-public class MapViewControllerImpl: UIViewController {
+public class MapViewControllerImpl: UIViewController, MapViewController {
     struct Constants {
         static let stopwatchPadding: CGFloat = 8.0
     }
@@ -40,7 +40,6 @@ public class MapViewControllerImpl: UIViewController {
         let addBarButtonItem = UIBarButtonItem(image: UIImage(named: "plus"), style: .done, target: self, action: #selector(addItem))
         self.navigationController?.navigationItem.rightBarButtonItem = addBarButtonItem
         self.navigationItem.rightBarButtonItem  = addBarButtonItem
-        self.presenter = MapViewPresenter(view: self)
         self.setupViews()
     }
     
@@ -80,9 +79,7 @@ public class MapViewControllerImpl: UIViewController {
         self.floatView?.onClickStarted = self.startTimer(sender:)
         self.floatView?.onClickedFinish = self.endTimer(sender:)
     }
-}
-
-extension MapViewControllerImpl {
+    
     func removeTimerSubview() {
         floatView?.removeFromSuperview()
         floatView = nil

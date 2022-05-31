@@ -10,21 +10,26 @@ import UIKit
 import CoreLocation
 import MapKit
 
-class MapViewPresenter {
+
+class MapViewPresenterImpl: MapViewPresenter {
     let view: MapViewControllerImpl
     var timer: Timer?
     var locations: [CLLocation]
     var finalTime: String = "00:00:00:0000"
     var finalDistance: String = "0.00"
     let locationProvider: LocationProvider
+    let dataSource: RouteDataSource
     
     var start: CFTimeInterval = 0
     var end: CFTimeInterval = 0
     
-    init(view: MapViewControllerImpl) {
+    init(view: MapViewControllerImpl,
+         service: RouteDataSource = RouteDefaultsDataSource(),
+         locationProvider: LocationProvider = LocationProviderImpl.shared) {
         self.view = view
         self.locations = []
-        self.locationProvider = LocationProvider.shared
+        self.locationProvider = locationProvider
+        self.dataSource = service
         locationProvider.addObserver(self)
         locationProvider.requestLocation()
     }
@@ -72,7 +77,6 @@ class MapViewPresenter {
     }
     
     func saveRoute() {
-        let dataSource = RouteDataSource.shared
         dataSource.addRoute(route: Route(time: finalTime, distance: finalDistance))
         self.view.clearPath()
         XbikeAlert.showSimpleAlert(with: "Your progress has been correctly stored!", on: self.view)
@@ -128,7 +132,7 @@ class MapViewPresenter {
     }
 }
 
-extension MapViewPresenter: LocationObserver {
+extension MapViewPresenterImpl: LocationObserver {
     func didRecieveLocations(_ locations: [CLLocation]) {
         self.updateViewRegion(locations)
         if(timer == nil) { return }

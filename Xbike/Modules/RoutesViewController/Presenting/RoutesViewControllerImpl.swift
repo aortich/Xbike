@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 public class RoutesViewControllerImpl: UIViewController {
+    
     private let reuseIdentifier: String = "RouteCell"
     var presenter: RoutesPresenter?
     private lazy var tableView: UITableView = {
@@ -18,7 +19,6 @@ public class RoutesViewControllerImpl: UIViewController {
     }()
     
     public override func viewDidLoad() {
-        self.presenter = RoutesPresenter(view: self)
         self.navigationItem.title = "My Progress"
         self.title = "My Progress"
         setupViews()

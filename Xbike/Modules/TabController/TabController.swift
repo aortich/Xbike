@@ -16,12 +16,14 @@ class TabController: UITabBarController, UITabBarControllerDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        let tabMap = UINavigationController(rootViewController: MapViewControllerImpl())
+        let tabMap = UINavigationController(
+            rootViewController:  MapViewConfigurator().makeMapViewController())
         let tabMapItem = UITabBarItem(title: "Current Ride", image: UIImage(named: "stopwatch"), tag: 1)
         
         tabMap.tabBarItem = tabMapItem
         
-        let tabRoutes = UINavigationController(rootViewController: RoutesViewControllerImpl())
+        let tabRoutes = UINavigationController(
+            rootViewController: RoutesViewControllerConfigurator().makeRoutesViewController())
         let tabRoutesItem = UITabBarItem(title: "My Progress", image: UIImage(named: "check"), tag: 2)
         tabRoutes.tabBarItem = tabRoutesItem
         

@@ -66,6 +66,18 @@
 		7C560D6A2845E18100F7BE2E /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D692845E18100F7BE2E /* Route.swift */; };
 		7C560D6B2845E18100F7BE2E /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D692845E18100F7BE2E /* Route.swift */; };
 		7C560D6C2845E18100F7BE2E /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D692845E18100F7BE2E /* Route.swift */; };
+		7C560D6E284646AC00F7BE2E /* RoutesViewControllerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D6D284646AC00F7BE2E /* RoutesViewControllerConfigurator.swift */; };
+		7C560D6F284646AC00F7BE2E /* RoutesViewControllerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D6D284646AC00F7BE2E /* RoutesViewControllerConfigurator.swift */; };
+		7C560D70284646AC00F7BE2E /* RoutesViewControllerConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D6D284646AC00F7BE2E /* RoutesViewControllerConfigurator.swift */; };
+		7C560D722846478D00F7BE2E /* RoutesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D712846478D00F7BE2E /* RoutesProtocols.swift */; };
+		7C560D732846478D00F7BE2E /* RoutesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D712846478D00F7BE2E /* RoutesProtocols.swift */; };
+		7C560D742846478D00F7BE2E /* RoutesProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D712846478D00F7BE2E /* RoutesProtocols.swift */; };
+		7C560D76284647B600F7BE2E /* MapViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D75284647B600F7BE2E /* MapViewProtocols.swift */; };
+		7C560D77284647B600F7BE2E /* MapViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D75284647B600F7BE2E /* MapViewProtocols.swift */; };
+		7C560D78284647B600F7BE2E /* MapViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D75284647B600F7BE2E /* MapViewProtocols.swift */; };
+		7C560D7A2846497B00F7BE2E /* MapViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D792846497B00F7BE2E /* MapViewConfigurator.swift */; };
+		7C560D7B2846497B00F7BE2E /* MapViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D792846497B00F7BE2E /* MapViewConfigurator.swift */; };
+		7C560D7C2846497B00F7BE2E /* MapViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C560D792846497B00F7BE2E /* MapViewConfigurator.swift */; };
 		7C9144222843D11700EB913C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9144212843D11700EB913C /* MapViewController.swift */; };
 		7CB6E8C928442D64007A3597 /* MapViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB6E8C828442D64007A3597 /* MapViewPresenter.swift */; };
 		7CF232A22842B33D007D25C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF232A12842B33D007D25C6 /* AppDelegate.swift */; };
@@ -135,6 +147,10 @@
 		7C560D5B2845902C00F7BE2E /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		7C560D6328459D1400F7BE2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C560D692845E18100F7BE2E /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		7C560D6D284646AC00F7BE2E /* RoutesViewControllerConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesViewControllerConfigurator.swift; sourceTree = "<group>"; };
+		7C560D712846478D00F7BE2E /* RoutesProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesProtocols.swift; sourceTree = "<group>"; };
+		7C560D75284647B600F7BE2E /* MapViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewProtocols.swift; sourceTree = "<group>"; };
+		7C560D792846497B00F7BE2E /* MapViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewConfigurator.swift; sourceTree = "<group>"; };
 		7C9144212843D11700EB913C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		7CB6E8C828442D64007A3597 /* MapViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewPresenter.swift; sourceTree = "<group>"; };
 		7CF2329E2842B33D007D25C6 /* Xbike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Xbike.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -240,6 +256,8 @@
 			children = (
 				7C560D35284455D100F7BE2E /* Presenting */,
 				7C560D332844556B00F7BE2E /* RoutesPresenter.swift */,
+				7C560D6D284646AC00F7BE2E /* RoutesViewControllerConfigurator.swift */,
+				7C560D712846478D00F7BE2E /* RoutesProtocols.swift */,
 			);
 			path = RoutesViewController;
 			sourceTree = "<group>";
@@ -365,6 +383,8 @@
 			children = (
 				7CB6E8C828442D64007A3597 /* MapViewPresenter.swift */,
 				7C9144232843D12C00EB913C /* Presenting */,
+				7C560D75284647B600F7BE2E /* MapViewProtocols.swift */,
+				7C560D792846497B00F7BE2E /* MapViewConfigurator.swift */,
 			);
 			path = MapViewController;
 			sourceTree = "<group>";
@@ -632,6 +652,8 @@
 				7C560D422844646F00F7BE2E /* RouteDataSource.swift in Sources */,
 				7C560D3F28445EF400F7BE2E /* TabController.swift in Sources */,
 				7C560D342844556B00F7BE2E /* RoutesPresenter.swift in Sources */,
+				7C560D7A2846497B00F7BE2E /* MapViewConfigurator.swift in Sources */,
+				7C560D6E284646AC00F7BE2E /* RoutesViewControllerConfigurator.swift in Sources */,
 				7C560D3C2844586500F7BE2E /* RouteForm.swift in Sources */,
 				7CF232A62842B33D007D25C6 /* ViewController.swift in Sources */,
 				7C248A4B2843F75B00B46B7D /* LocationObserver.swift in Sources */,
@@ -648,8 +670,10 @@
 				7C560D37284455E000F7BE2E /* RoutesViewControllerImpl.swift in Sources */,
 				7C560D5728458BBF00F7BE2E /* UIFont+CustomFont.swift in Sources */,
 				7CF232A22842B33D007D25C6 /* AppDelegate.swift in Sources */,
+				7C560D76284647B600F7BE2E /* MapViewProtocols.swift in Sources */,
 				7C560D4F284581A500F7BE2E /* XBikeActionAlert.swift in Sources */,
 				7C2C53AB28441B0B001F5E38 /* FloatingTimerController.swift in Sources */,
+				7C560D722846478D00F7BE2E /* RoutesProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -659,10 +683,14 @@
 			files = (
 				7C560D5828458BBF00F7BE2E /* UIFont+CustomFont.swift in Sources */,
 				7C248A4C2843F75B00B46B7D /* LocationObserver.swift in Sources */,
+				7C560D77284647B600F7BE2E /* MapViewProtocols.swift in Sources */,
 				7C560D5D2845902C00F7BE2E /* UIView+Extensions.swift in Sources */,
+				7C560D7B2846497B00F7BE2E /* MapViewConfigurator.swift in Sources */,
 				7C560D6B2845E18100F7BE2E /* Route.swift in Sources */,
 				7CF232B92842B33E007D25C6 /* XbikeTests.swift in Sources */,
 				7C248A482843F24000B46B7D /* LocationProvider.swift in Sources */,
+				7C560D6F284646AC00F7BE2E /* RoutesViewControllerConfigurator.swift in Sources */,
+				7C560D732846478D00F7BE2E /* RoutesProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,12 +699,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C560D5E2845902C00F7BE2E /* UIView+Extensions.swift in Sources */,
+				7C560D78284647B600F7BE2E /* MapViewProtocols.swift in Sources */,
+				7C560D70284646AC00F7BE2E /* RoutesViewControllerConfigurator.swift in Sources */,
 				7CF232C52842B33E007D25C6 /* XbikeUITestsLaunchTests.swift in Sources */,
 				7C560D5928458BBF00F7BE2E /* UIFont+CustomFont.swift in Sources */,
 				7CF232C32842B33E007D25C6 /* XbikeUITests.swift in Sources */,
 				7C248A4D2843F75B00B46B7D /* LocationObserver.swift in Sources */,
 				7C560D6C2845E18100F7BE2E /* Route.swift in Sources */,
 				7C248A492843F24000B46B7D /* LocationProvider.swift in Sources */,
+				7C560D742846478D00F7BE2E /* RoutesProtocols.swift in Sources */,
+				7C560D7C2846497B00F7BE2E /* MapViewConfigurator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

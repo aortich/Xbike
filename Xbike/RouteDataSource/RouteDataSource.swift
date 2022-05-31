@@ -7,12 +7,16 @@
 
 import Foundation
 
-class RouteDataSource {
-    static let shared = RouteDataSource()
+protocol RouteDataSource {
+    func addRoute(route: Route)
+    func retrieveRoutes() -> [Route]
+}
+
+class RouteDefaultsDataSource: RouteDataSource {
     let modelKey: String = "routes"
     let defaults: UserDefaults
     
-    private init() {
+    init() {
         defaults = UserDefaults.standard
     }
     
